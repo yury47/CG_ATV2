@@ -1,0 +1,127 @@
+[
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgApplication.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgApplication.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgApplication.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgTimer.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgTimer.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgTimer.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgException.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgException.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgException.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgImage.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgImage.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgImage.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgTrackball.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgTrackball.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgTrackball.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgWindow.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgWindow.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgWindow.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgUtil.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgUtil.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgUtil.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgOpenGLError.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgOpenGLError.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgOpenGLFunction.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgOpenGLFunction.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgOpenGLImage.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgOpenGLImage.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgOpenGLShader.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgOpenGLShader.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -c /home/yury47/CG_ATV2/abcg/abcgOpenGLWindow.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/abcgOpenGLWindow.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/c++  -I/opt/local/include -I/usr/include/SDL2 -I/home/yury47/CG_ATV2/abcg/external/imgui -O3 -DNDEBUG -o CMakeFiles/imgui.dir/imgui.cpp.o -c /home/yury47/CG_ATV2/abcg/external/imgui/imgui.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/external/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/c++  -I/opt/local/include -I/usr/include/SDL2 -I/home/yury47/CG_ATV2/abcg/external/imgui -O3 -DNDEBUG -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /home/yury47/CG_ATV2/abcg/external/imgui/imgui_demo.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/external/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/c++  -I/opt/local/include -I/usr/include/SDL2 -I/home/yury47/CG_ATV2/abcg/external/imgui -O3 -DNDEBUG -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /home/yury47/CG_ATV2/abcg/external/imgui/imgui_draw.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/external/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/c++  -I/opt/local/include -I/usr/include/SDL2 -I/home/yury47/CG_ATV2/abcg/external/imgui -O3 -DNDEBUG -o CMakeFiles/imgui.dir/imgui_tables.cpp.o -c /home/yury47/CG_ATV2/abcg/external/imgui/imgui_tables.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/external/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/c++  -I/opt/local/include -I/usr/include/SDL2 -I/home/yury47/CG_ATV2/abcg/external/imgui -O3 -DNDEBUG -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /home/yury47/CG_ATV2/abcg/external/imgui/imgui_widgets.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/external/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/c++  -I/opt/local/include -I/usr/include/SDL2 -I/home/yury47/CG_ATV2/abcg/external/imgui -O3 -DNDEBUG -o CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.o -c /home/yury47/CG_ATV2/abcg/external/imgui/imgui_impl_sdl2.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/external/imgui/imgui_impl_sdl2.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg/external/imgui",
+  "command": "/usr/lib/ccache/c++  -I/opt/local/include -I/usr/include/SDL2 -I/home/yury47/CG_ATV2/abcg/external/imgui -O3 -DNDEBUG -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o -c /home/yury47/CG_ATV2/abcg/external/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/yury47/CG_ATV2/abcg/external/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/abcg/external/fmt",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg/external/fmt -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/fmt.dir/format.cc.o -c /home/yury47/CG_ATV2/abcg/external/fmt/format.cc",
+  "file": "/home/yury47/CG_ATV2/abcg/external/fmt/format.cc"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/camera.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/camera.cpp",
+  "file": "/home/yury47/CG_ATV2/examples/ATV2/camera.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/cat.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/cat.cpp",
+  "file": "/home/yury47/CG_ATV2/examples/ATV2/cat.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/ground.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/ground.cpp",
+  "file": "/home/yury47/CG_ATV2/examples/ATV2/ground.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/main.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/main.cpp",
+  "file": "/home/yury47/CG_ATV2/examples/ATV2/main.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/window.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/window.cpp",
+  "file": "/home/yury47/CG_ATV2/examples/ATV2/window.cpp"
+}
+]
