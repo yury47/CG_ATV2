@@ -233,7 +233,7 @@ examples/clean: examples/ATV2/clean
 # Directory level rules for directory examples/ATV2
 
 # Recursive "all" directory target.
-examples/ATV2/all: examples/ATV2/CMakeFiles/Look_a_Cat.dir/all
+examples/ATV2/all: examples/ATV2/CMakeFiles/ATV2.dir/all
 .PHONY : examples/ATV2/all
 
 # Recursive "preinstall" directory target.
@@ -241,7 +241,7 @@ examples/ATV2/preinstall:
 .PHONY : examples/ATV2/preinstall
 
 # Recursive "clean" directory target.
-examples/ATV2/clean: examples/ATV2/CMakeFiles/Look_a_Cat.dir/clean
+examples/ATV2/clean: examples/ATV2/CMakeFiles/ATV2.dir/clean
 .PHONY : examples/ATV2/clean
 
 #=============================================================================
@@ -324,32 +324,32 @@ abcg/external/fmt/CMakeFiles/fmt.dir/clean:
 .PHONY : abcg/external/fmt/CMakeFiles/fmt.dir/clean
 
 #=============================================================================
-# Target rules for target examples/ATV2/CMakeFiles/Look_a_Cat.dir
+# Target rules for target examples/ATV2/CMakeFiles/ATV2.dir
 
 # All Build rule for target.
-examples/ATV2/CMakeFiles/Look_a_Cat.dir/all: abcg/CMakeFiles/abcg.dir/all
-examples/ATV2/CMakeFiles/Look_a_Cat.dir/all: abcg/external/imgui/CMakeFiles/imgui.dir/all
-examples/ATV2/CMakeFiles/Look_a_Cat.dir/all: abcg/external/fmt/CMakeFiles/fmt.dir/all
-	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/Look_a_Cat.dir/build.make examples/ATV2/CMakeFiles/Look_a_Cat.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/Look_a_Cat.dir/build.make examples/ATV2/CMakeFiles/Look_a_Cat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Look_a_Cat"
-.PHONY : examples/ATV2/CMakeFiles/Look_a_Cat.dir/all
+examples/ATV2/CMakeFiles/ATV2.dir/all: abcg/CMakeFiles/abcg.dir/all
+examples/ATV2/CMakeFiles/ATV2.dir/all: abcg/external/imgui/CMakeFiles/imgui.dir/all
+examples/ATV2/CMakeFiles/ATV2.dir/all: abcg/external/fmt/CMakeFiles/fmt.dir/all
+	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ATV2"
+.PHONY : examples/ATV2/CMakeFiles/ATV2.dir/all
 
 # Build rule for subdir invocation for target.
-examples/ATV2/CMakeFiles/Look_a_Cat.dir/rule: cmake_check_build_system
+examples/ATV2/CMakeFiles/ATV2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yury47/CG_ATV2/build/CMakeFiles 29
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/ATV2/CMakeFiles/Look_a_Cat.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/ATV2/CMakeFiles/ATV2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yury47/CG_ATV2/build/CMakeFiles 0
-.PHONY : examples/ATV2/CMakeFiles/Look_a_Cat.dir/rule
+.PHONY : examples/ATV2/CMakeFiles/ATV2.dir/rule
 
 # Convenience name for target.
-Look_a_Cat: examples/ATV2/CMakeFiles/Look_a_Cat.dir/rule
-.PHONY : Look_a_Cat
+ATV2: examples/ATV2/CMakeFiles/ATV2.dir/rule
+.PHONY : ATV2
 
 # clean rule for target.
-examples/ATV2/CMakeFiles/Look_a_Cat.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/Look_a_Cat.dir/build.make examples/ATV2/CMakeFiles/Look_a_Cat.dir/clean
-.PHONY : examples/ATV2/CMakeFiles/Look_a_Cat.dir/clean
+examples/ATV2/CMakeFiles/ATV2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/clean
+.PHONY : examples/ATV2/CMakeFiles/ATV2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

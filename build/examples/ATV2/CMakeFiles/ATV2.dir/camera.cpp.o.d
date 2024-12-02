@@ -1,4 +1,4 @@
-examples/ATV2/CMakeFiles/Look_a_Cat.dir/camera.cpp.o: \
+examples/ATV2/CMakeFiles/ATV2.dir/camera.cpp.o: \
  /home/yury47/CG_ATV2/examples/ATV2/camera.cpp /usr/include/stdc-predef.h \
  /home/yury47/CG_ATV2/examples/ATV2/camera.hpp \
  /home/yury47/CG_ATV2/abcg/external/glm/mat4x4.hpp \

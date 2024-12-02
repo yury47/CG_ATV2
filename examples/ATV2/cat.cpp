@@ -14,7 +14,7 @@ template <> struct std::hash<Vertex> {
 
 void Cat :: create(GLuint program){
   //Initial position
-  m_translation = glm::vec3(0.0f, 2.0f, 0.0f);
+  m_translation = glm::vec3(0.0f, 2.0f, 2.0f);
 
   //Initial rotation
   //m_rotation = 90.0f;

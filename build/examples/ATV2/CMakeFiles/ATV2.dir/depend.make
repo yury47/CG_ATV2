@@ -1,2 +1,2 @@
-# Empty dependencies file for Look_a_Cat.
+# Empty dependencies file for ATV2.
 # This may be replaced when dependencies are built.

@@ -156,17 +156,17 @@ fmt/fast:
 .PHONY : fmt/fast
 
 #=============================================================================
-# Target rules for targets named Look_a_Cat
+# Target rules for targets named ATV2
 
 # Build rule for target.
-Look_a_Cat: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Look_a_Cat
-.PHONY : Look_a_Cat
+ATV2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ATV2
+.PHONY : ATV2
 
 # fast build rule for target.
-Look_a_Cat/fast:
-	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/Look_a_Cat.dir/build.make examples/ATV2/CMakeFiles/Look_a_Cat.dir/build
-.PHONY : Look_a_Cat/fast
+ATV2/fast:
+	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/build
+.PHONY : ATV2/fast
 
 # Help Target
 help:
@@ -176,7 +176,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Look_a_Cat"
+	@echo "... ATV2"
 	@echo "... abcg"
 	@echo "... fmt"
 	@echo "... imgui"

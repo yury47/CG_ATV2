@@ -1,6 +1,6 @@
-examples/ATV2/CMakeFiles/Look_a_Cat.dir/window.cpp.o: \
- /home/yury47/CG_ATV2/examples/ATV2/window.cpp /usr/include/stdc-predef.h \
- /home/yury47/CG_ATV2/examples/ATV2/window.hpp \
+examples/ATV2/CMakeFiles/ATV2.dir/ground.cpp.o: \
+ /home/yury47/CG_ATV2/examples/ATV2/ground.cpp /usr/include/stdc-predef.h \
+ /home/yury47/CG_ATV2/examples/ATV2/ground.hpp \
  /home/yury47/CG_ATV2/abcg/abcgOpenGL.hpp \
  /home/yury47/CG_ATV2/abcg/abcg.hpp \
  /home/yury47/CG_ATV2/abcg/abcgApplication.hpp /usr/include/c++/11/string \
@@ -637,9 +637,6 @@ examples/ATV2/CMakeFiles/Look_a_Cat.dir/window.cpp.o: \
  /home/yury47/CG_ATV2/abcg/abcgShader.hpp \
  /home/yury47/CG_ATV2/abcg/abcgOpenGLWindow.hpp \
  /home/yury47/CG_ATV2/abcg/abcgOpenGLFunction.hpp \
- /home/yury47/CG_ATV2/examples/ATV2/camera.hpp \
- /home/yury47/CG_ATV2/examples/ATV2/ground.hpp /usr/include/c++/11/random \
- /usr/include/c++/11/bits/random.h \
+ /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
- /usr/include/c++/11/bits/random.tcc \
- /home/yury47/CG_ATV2/examples/ATV2/cat.hpp
+ /usr/include/c++/11/bits/random.tcc

@@ -101,27 +101,27 @@
 },
 {
   "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
-  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/camera.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/camera.cpp",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/ATV2.dir/camera.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/camera.cpp",
   "file": "/home/yury47/CG_ATV2/examples/ATV2/camera.cpp"
 },
 {
   "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
-  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/cat.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/cat.cpp",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/ATV2.dir/cat.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/cat.cpp",
   "file": "/home/yury47/CG_ATV2/examples/ATV2/cat.cpp"
 },
 {
   "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
-  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/ground.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/ground.cpp",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/ATV2.dir/ground.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/ground.cpp",
   "file": "/home/yury47/CG_ATV2/examples/ATV2/ground.cpp"
 },
 {
   "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
-  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/main.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/main.cpp",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/ATV2.dir/main.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/main.cpp",
   "file": "/home/yury47/CG_ATV2/examples/ATV2/main.cpp"
 },
 {
   "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
-  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Look_a_Cat.dir/window.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/window.cpp",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/ATV2.dir/window.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/window.cpp",
   "file": "/home/yury47/CG_ATV2/examples/ATV2/window.cpp"
 }
 ]

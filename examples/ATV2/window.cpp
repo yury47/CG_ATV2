@@ -99,7 +99,6 @@ void Window::onCreate() {
   m_cat.create(m_program);
 
 
-
   abcg::glBindVertexArray(0);
 
   

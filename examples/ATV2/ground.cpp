@@ -50,6 +50,7 @@ void Ground::paint() {
       float red = m_randomColor(m_randomEngine);
       float green = m_randomColor(m_randomEngine);
       float blue = m_randomColor(m_randomEngine);
+
       abcg::glUniform4f(m_colorLoc, red, green, blue, 1.0f);
 
       abcg::glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
