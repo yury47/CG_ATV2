@@ -158,5 +158,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "abcg/CMakeFiles/abcg.dir/DependInfo.cmake"
   "abcg/external/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   "abcg/external/fmt/CMakeFiles/fmt.dir/DependInfo.cmake"
-  "examples/ATV2/CMakeFiles/ATV2.dir/DependInfo.cmake"
+  "examples/ATV2/CMakeFiles/loadmodel.dir/DependInfo.cmake"
   )

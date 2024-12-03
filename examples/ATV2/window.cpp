@@ -1,5 +1,6 @@
 #include "window.hpp"
 
+#include <glm/gtx/fast_trigonometry.hpp>
 #include <unordered_map>
 
 // Explicit specialization of std::hash for Vertex
@@ -9,66 +10,6 @@ template <> struct std::hash<Vertex> {
     return h1;
   }
 };
-
-void Window::onEvent(SDL_Event const &event) {
-  if (event.type == SDL_KEYDOWN) {
-    if (event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w) {
-      m_catSpeed = +3.5f;
-      m_dollySpeed = -cosf(glm::radians(m_cat.m_rotation)) * m_catSpeed;
-      m_truckSpeed = sinf(glm::radians(m_cat.m_rotation)) * m_catSpeed;
-    }
-    if (event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s) {
-      m_catSpeed = -3.5f;
-      m_dollySpeed = -cosf(glm::radians(m_cat.m_rotation+180)) * (-m_catSpeed);
-      m_truckSpeed = sinf(glm::radians(m_cat.m_rotation+180)) * (-m_catSpeed);
-    }
-    if (event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a) {
-      m_catRotation = 0.2f;
-    }
-    if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d) {
-      m_catRotation = -0.2f;
-    }
-    // if (event.key.keysym.sym == SDLK_q)
-    //   m_truckSpeed = -1.0f;
-    // if (event.key.keysym.sym == SDLK_e)
-    //   m_truckSpeed = 1.0f;
-  }
-  if (event.type == SDL_KEYUP) {
-    if ((event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w) &&
-        m_catSpeed != 0) {
-      m_dollySpeed = 0.0f;
-      m_catSpeed = 0.0f;
-      m_truckSpeed = 0.0f;
-      m_catRotation = 0.0f;
-    }
-    if ((event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s) &&
-        m_catSpeed != 0) {
-      m_dollySpeed = 0.0f;
-      m_catSpeed = 0.0f;
-      m_truckSpeed = 0.0f;
-      m_catRotation = 0.0f;
-    }
-    if ((event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a) &&
-        m_catRotation != 0) {
-      m_dollySpeed = 0.0f;
-      m_catSpeed = 0.0f;
-      m_truckSpeed = 0.0f;
-      m_catRotation = 0.0f;
-    }
-    if ((event.key.keysym.sym == SDLK_RIGHT ||
-         event.key.keysym.sym == SDLK_d) &&
-        m_catRotation != 0) {
-      m_dollySpeed = 0.0f;
-      m_catSpeed = 0.0f;
-      m_truckSpeed = 0.0f;
-      m_catRotation = 0.0f;
-    }
-    // if (event.key.keysym.sym == SDLK_q && m_truckSpeed < 0)
-    //   m_truckSpeed = 0.0f;
-    // if (event.key.keysym.sym == SDLK_e && m_truckSpeed > 0)
-    //   m_truckSpeed = 0.0f;
-  }
-}
 
 void Window::onCreate() {
   auto const &assetsPath{abcg::Application::getAssetsPath()};
@@ -80,63 +21,190 @@ void Window::onCreate() {
 
   // Create program
   m_program =
-      abcg::createOpenGLProgram({{.source = assetsPath + "lookat.vert",
+      abcg::createOpenGLProgram({{.source = assetsPath + "loadmodel.vert",
                                   .stage = abcg::ShaderStage::Vertex},
-                                 {.source = assetsPath + "lookat.frag",
+                                 {.source = assetsPath + "loadmodel.frag",
                                   .stage = abcg::ShaderStage::Fragment}});
 
-  m_ground.create(m_program);
+  // Load model
+  loadModelFromFile(assetsPath + "frog.obj");
+  standardize();
 
+  m_verticesToDraw = m_indices.size();
 
-  // Get location of uniform variables
-  m_viewMatrixLocation = abcg::glGetUniformLocation(m_program, "viewMatrix");
-  m_projMatrixLocation = abcg::glGetUniformLocation(m_program, "projMatrix");
-  m_modelMatrixLocation = abcg::glGetUniformLocation(m_program, "modelMatrix");
-  m_colorLocation = abcg::glGetUniformLocation(m_program, "color");
+  // Generate VBO
+  abcg::glGenBuffers(1, &m_VBO);
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
+  abcg::glBufferData(GL_ARRAY_BUFFER,
+                     sizeof(m_vertices.at(0)) * m_vertices.size(),
+                     m_vertices.data(), GL_STATIC_DRAW);
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-  //m_cat.loadModelFromFile(assetsPath + "bunny.obj");
-  
-  m_cat.create(m_program);
+  // Generate EBO
+  abcg::glGenBuffers(1, &m_EBO);
+  abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_EBO);
+  abcg::glBufferData(GL_ELEMENT_ARRAY_BUFFER,
+                     sizeof(m_indices.at(0)) * m_indices.size(),
+                     m_indices.data(), GL_STATIC_DRAW);
+  abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
+  // Create VAO
+  abcg::glGenVertexArrays(1, &m_VAO);
 
+  // Bind vertex attributes to current VAO
+  abcg::glBindVertexArray(m_VAO);
+
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
+  auto const positionAttribute{
+      abcg::glGetAttribLocation(m_program, "inPosition")};
+  abcg::glEnableVertexAttribArray(positionAttribute);
+  abcg::glVertexAttribPointer(positionAttribute, 3, GL_FLOAT, GL_FALSE,
+                              sizeof(Vertex), nullptr);
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+  abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_EBO);
+
+  // End of binding to current VAO
   abcg::glBindVertexArray(0);
-
-  
 }
 
+void Window::loadModelFromFile(std::string_view path) {
+  tinyobj::ObjReader reader;
 
+  if (!reader.ParseFromFile(path.data())) {
+    if (!reader.Error().empty()) {
+      throw abcg::RuntimeError(
+          fmt::format("Failed to load model {} ({})", path, reader.Error()));
+    }
+    throw abcg::RuntimeError(fmt::format("Failed to load model {}", path));
+  }
+
+  if (!reader.Warning().empty()) {
+    fmt::print("Warning: {}\n", reader.Warning());
+  }
+
+  auto const &attributes{reader.GetAttrib()};
+  auto const &shapes{reader.GetShapes()};
+
+  m_vertices.clear();
+  m_indices.clear();
+
+  // A key:value map with key=Vertex and value=index
+  std::unordered_map<Vertex, GLuint> hash{};
+
+  // Loop over shapes
+  for (auto const &shape : shapes) {
+    // Loop over indices
+    for (auto const offset : iter::range(shape.mesh.indices.size())) {
+      // Access to vertex
+      auto const index{shape.mesh.indices.at(offset)};
+
+      // Vertex position
+      auto const startIndex{3 * index.vertex_index};
+      auto const vx{attributes.vertices.at(startIndex + 0)};
+      auto const vy{attributes.vertices.at(startIndex + 1)};
+      auto const vz{attributes.vertices.at(startIndex + 2)};
+
+      Vertex const vertex{.position = {vx, vy, vz}};
+
+      // If map doesn't contain this vertex
+      if (!hash.contains(vertex)) {
+        // Add this index (size of m_vertices)
+        hash[vertex] = m_vertices.size();
+        // Add this vertex
+        m_vertices.push_back(vertex);
+      }
+
+      m_indices.push_back(hash[vertex]);
+    }
+  }
+}
+
+void Window::standardize() {
+  /*// Center to origin and normalize bounds to [-1, 1]
+
+  // Get bounds
+  glm::vec3 max(std::numeric_limits<float>::lowest());
+  glm::vec3 min(std::numeric_limits<float>::max());
+  for (auto const &vertex : m_vertices) {
+    max = glm::max(max, vertex.position);
+    min = glm::min(min, vertex.position);
+  }
+
+  // Center and scale
+  auto const center{(min + max) / 2.0f};
+  auto const scaling{1.0f / glm::length(max - min)};
+  for (auto &vertex : m_vertices) {
+    vertex.position = (vertex.position - center) * scaling;
+  }*/
+
+
+  // Center to origin and normalize bounds to [-1, 1]
+
+  // Get bounds
+  glm::vec3 max(std::numeric_limits<float>::lowest());
+  glm::vec3 min(std::numeric_limits<float>::max());
+  for (auto const &vertex : m_vertices) {
+    max = glm::max(max, vertex.position);
+    min = glm::min(min, vertex.position);
+  }
+
+  // Center and scale
+  auto const center{(min + max) / 2.0f};
+  auto const scaling{2.0f / glm::length(max - min)};
+
+  // Define rotation matrices
+  auto const rotationX{glm::rotate(glm::mat4(1.0f), glm::radians(270.0f), glm::vec3(1.0f, 0.0f, 0.0f))};
+  auto const rotationY{glm::rotate(glm::mat4(1.0f), glm::radians(270.0f), glm::vec3(0.0f, 1.0f, 0.0f))};
+
+  // Combine transformations: scaling, centering, and rotations
+  auto const transformation{rotationY * rotationX * glm::scale(glm::mat4(1.0f), glm::vec3(scaling))};
+
+  // Apply transformations
+  for (auto &vertex : m_vertices) {
+    glm::vec4 transformedPosition{vertex.position - center, 1.0f};
+    transformedPosition = transformation * transformedPosition;
+    vertex.position = glm::vec3(transformedPosition);
+  }
+}
 
 void Window::onPaint() {
+  // Animate angle by 15 degrees per second
+  auto const deltaTime{gsl::narrow_cast<float>(getDeltaTime())};
+  m_angle = glm::wrapAngle(m_angle + glm::radians(45.0f) * deltaTime);
+
   // Clear color buffer and depth buffer
   abcg::glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
   abcg::glViewport(0, 0, m_viewportSize.x, m_viewportSize.y);
 
   abcg::glUseProgram(m_program);
+  abcg::glBindVertexArray(m_VAO);
 
-  // Set uniform variables for viewMatrix and projMatrix
-  // These matrices are used for every scene object
-  abcg::glUniformMatrix4fv(m_viewMatrixLocation, 1, GL_FALSE,
-                           &m_camera.getViewMatrix()[0][0]);
-  abcg::glUniformMatrix4fv(m_projMatrixLocation, 1, GL_FALSE,
-                           &m_camera.getProjMatrix()[0][0]);
+  // Update uniform variable
+  auto const angleLocation{abcg::glGetUniformLocation(m_program, "angle")};
+  abcg::glUniform1f(angleLocation, m_angle);
 
-  
-
-  m_cat.paint(m_viewportSize, m_camera, m_program);
+  // Draw triangles
+  abcg::glDrawElements(GL_TRIANGLES, m_verticesToDraw, GL_UNSIGNED_INT,
+                       nullptr);
 
   abcg::glBindVertexArray(0);
-
-  // Draw ground
-  m_ground.paint();
-
-
-
   abcg::glUseProgram(0);
 }
 
-void Window::onPaintUI() { 
-  abcg::OpenGLWindow::onPaintUI();
+void Window::update(float red, float green, float blue){
+
+  m_red = red;
+  m_green = green;
+  m_blue = blue;
+  
+
+}
+
+void Window::onPaintUI() {
+  // Create a window for the other widgets
+//    abcg::OpenGLWindow::onPaintUI();
 
   // Window begin
   ImGui::Begin("Cores");  
@@ -170,33 +238,18 @@ void Window::onPaintUI() {
     if (m_blue < 0.0f)
       m_blue = 0.0f;
   }
+
+  update(m_red, m_green, m_blue);
+
   ImGui::End();
-    
 
 }
 
-void Window::onResize(glm::ivec2 const &size) {
-  m_viewportSize = size;
-  m_camera.computeProjectionMatrix(size);
-
-}
+void Window::onResize(glm::ivec2 const &size) { m_viewportSize = size; }
 
 void Window::onDestroy() {
-  m_ground.destroy();
-  m_cat.destroy();
-
-
-
-}
-
-void Window::onUpdate() {
-  auto const deltaTime{gsl::narrow_cast<float>(getDeltaTime())};
-
-  // Update LookAt camera
-  m_camera.dolly(m_dollySpeed * deltaTime);
-  m_camera.truck(m_truckSpeed * deltaTime);
-  m_camera.pan(m_panSpeed * deltaTime);
-  m_cat.m_rotation += m_catRotation;
-  m_cat.update(m_catSpeed, deltaTime, m_red, m_green, m_blue);
-
+  abcg::glDeleteProgram(m_program);
+  abcg::glDeleteBuffers(1, &m_EBO);
+  abcg::glDeleteBuffers(1, &m_VBO);
+  abcg::glDeleteVertexArrays(1, &m_VAO);
 }

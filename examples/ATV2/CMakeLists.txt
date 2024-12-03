@@ -1,3 +1,3 @@
-project(ATV2)
-add_executable(${PROJECT_NAME} camera.cpp cat.cpp ground.cpp main.cpp window.cpp)
+project(loadmodel)
+add_executable(${PROJECT_NAME} main.cpp window.cpp)
 enable_abcg(${PROJECT_NAME})
