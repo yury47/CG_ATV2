@@ -9,7 +9,7 @@ int main(int argc, char **argv) {
     window.setWindowSettings({
         .width = 800,
         .height = 600,
-        .title = "Load Model",
+        .title = "Modelo de Sapo",
     });
 
     app.run(window);

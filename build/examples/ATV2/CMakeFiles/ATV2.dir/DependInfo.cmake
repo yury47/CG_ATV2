@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yury47/CG_ATV2/examples/ATV2/main.cpp" "examples/ATV2/CMakeFiles/loadmodel.dir/main.cpp.o" "gcc" "examples/ATV2/CMakeFiles/loadmodel.dir/main.cpp.o.d"
-  "/home/yury47/CG_ATV2/examples/ATV2/window.cpp" "examples/ATV2/CMakeFiles/loadmodel.dir/window.cpp.o" "gcc" "examples/ATV2/CMakeFiles/loadmodel.dir/window.cpp.o.d"
+  "/home/yury47/CG_ATV2/examples/ATV2/main.cpp" "examples/ATV2/CMakeFiles/ATV2.dir/main.cpp.o" "gcc" "examples/ATV2/CMakeFiles/ATV2.dir/main.cpp.o.d"
+  "/home/yury47/CG_ATV2/examples/ATV2/window.cpp" "examples/ATV2/CMakeFiles/ATV2.dir/window.cpp.o" "gcc" "examples/ATV2/CMakeFiles/ATV2.dir/window.cpp.o.d"
   )
 
 # Targets to which this target links.

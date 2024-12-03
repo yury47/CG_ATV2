@@ -117,25 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-examples/ATV2/CMakeFiles/loadmodel.dir/rule:
-	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/ATV2/CMakeFiles/loadmodel.dir/rule
-.PHONY : examples/ATV2/CMakeFiles/loadmodel.dir/rule
+examples/ATV2/CMakeFiles/ATV2.dir/rule:
+	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/ATV2/CMakeFiles/ATV2.dir/rule
+.PHONY : examples/ATV2/CMakeFiles/ATV2.dir/rule
 
 # Convenience name for target.
-loadmodel: examples/ATV2/CMakeFiles/loadmodel.dir/rule
-.PHONY : loadmodel
+ATV2: examples/ATV2/CMakeFiles/ATV2.dir/rule
+.PHONY : ATV2
 
 # fast build rule for target.
-loadmodel/fast:
-	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/build
-.PHONY : loadmodel/fast
+ATV2/fast:
+	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/build
+.PHONY : ATV2/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/main.cpp.o
+	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -143,7 +143,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/main.cpp.i
+	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -151,7 +151,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/main.cpp.s
+	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 window.o: window.cpp.o
@@ -159,7 +159,7 @@ window.o: window.cpp.o
 
 # target to build an object file
 window.cpp.o:
-	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/window.cpp.o
+	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/window.cpp.o
 .PHONY : window.cpp.o
 
 window.i: window.cpp.i
@@ -167,7 +167,7 @@ window.i: window.cpp.i
 
 # target to preprocess a source file
 window.cpp.i:
-	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/window.cpp.i
+	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/window.cpp.i
 .PHONY : window.cpp.i
 
 window.s: window.cpp.s
@@ -175,7 +175,7 @@ window.s: window.cpp.s
 
 # target to generate assembly for a file
 window.cpp.s:
-	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/window.cpp.s
+	cd /home/yury47/CG_ATV2/build && $(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/window.cpp.s
 .PHONY : window.cpp.s
 
 # Help Target
@@ -186,7 +186,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... loadmodel"
+	@echo "... ATV2"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

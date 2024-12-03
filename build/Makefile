@@ -156,17 +156,17 @@ fmt/fast:
 .PHONY : fmt/fast
 
 #=============================================================================
-# Target rules for targets named loadmodel
+# Target rules for targets named ATV2
 
 # Build rule for target.
-loadmodel: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 loadmodel
-.PHONY : loadmodel
+ATV2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ATV2
+.PHONY : ATV2
 
 # fast build rule for target.
-loadmodel/fast:
-	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/build
-.PHONY : loadmodel/fast
+ATV2/fast:
+	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/build
+.PHONY : ATV2/fast
 
 # Help Target
 help:
@@ -176,10 +176,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... ATV2"
 	@echo "... abcg"
 	@echo "... fmt"
 	@echo "... imgui"
-	@echo "... loadmodel"
 .PHONY : help
 
 

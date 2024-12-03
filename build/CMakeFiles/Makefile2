@@ -233,7 +233,7 @@ examples/clean: examples/ATV2/clean
 # Directory level rules for directory examples/ATV2
 
 # Recursive "all" directory target.
-examples/ATV2/all: examples/ATV2/CMakeFiles/loadmodel.dir/all
+examples/ATV2/all: examples/ATV2/CMakeFiles/ATV2.dir/all
 .PHONY : examples/ATV2/all
 
 # Recursive "preinstall" directory target.
@@ -241,7 +241,7 @@ examples/ATV2/preinstall:
 .PHONY : examples/ATV2/preinstall
 
 # Recursive "clean" directory target.
-examples/ATV2/clean: examples/ATV2/CMakeFiles/loadmodel.dir/clean
+examples/ATV2/clean: examples/ATV2/CMakeFiles/ATV2.dir/clean
 .PHONY : examples/ATV2/clean
 
 #=============================================================================
@@ -252,7 +252,7 @@ abcg/CMakeFiles/abcg.dir/all: abcg/external/imgui/CMakeFiles/imgui.dir/all
 abcg/CMakeFiles/abcg.dir/all: abcg/external/fmt/CMakeFiles/fmt.dir/all
 	$(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/depend
 	$(MAKE) $(MAKESILENT) -f abcg/CMakeFiles/abcg.dir/build.make abcg/CMakeFiles/abcg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target abcg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target abcg"
 .PHONY : abcg/CMakeFiles/abcg.dir/all
 
 # Build rule for subdir invocation for target.
@@ -278,7 +278,7 @@ abcg/CMakeFiles/abcg.dir/clean:
 abcg/external/imgui/CMakeFiles/imgui.dir/all:
 	$(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=19,20,21,22,23,24,25,26 "Built target imgui"
 .PHONY : abcg/external/imgui/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -304,7 +304,7 @@ abcg/external/imgui/CMakeFiles/imgui.dir/clean:
 abcg/external/fmt/CMakeFiles/fmt.dir/all:
 	$(MAKE) $(MAKESILENT) -f abcg/external/fmt/CMakeFiles/fmt.dir/build.make abcg/external/fmt/CMakeFiles/fmt.dir/depend
 	$(MAKE) $(MAKESILENT) -f abcg/external/fmt/CMakeFiles/fmt.dir/build.make abcg/external/fmt/CMakeFiles/fmt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=14,15 "Built target fmt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=17,18 "Built target fmt"
 .PHONY : abcg/external/fmt/CMakeFiles/fmt.dir/all
 
 # Build rule for subdir invocation for target.
@@ -324,32 +324,32 @@ abcg/external/fmt/CMakeFiles/fmt.dir/clean:
 .PHONY : abcg/external/fmt/CMakeFiles/fmt.dir/clean
 
 #=============================================================================
-# Target rules for target examples/ATV2/CMakeFiles/loadmodel.dir
+# Target rules for target examples/ATV2/CMakeFiles/ATV2.dir
 
 # All Build rule for target.
-examples/ATV2/CMakeFiles/loadmodel.dir/all: abcg/CMakeFiles/abcg.dir/all
-examples/ATV2/CMakeFiles/loadmodel.dir/all: abcg/external/imgui/CMakeFiles/imgui.dir/all
-examples/ATV2/CMakeFiles/loadmodel.dir/all: abcg/external/fmt/CMakeFiles/fmt.dir/all
-	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=24,25,26 "Built target loadmodel"
-.PHONY : examples/ATV2/CMakeFiles/loadmodel.dir/all
+examples/ATV2/CMakeFiles/ATV2.dir/all: abcg/CMakeFiles/abcg.dir/all
+examples/ATV2/CMakeFiles/ATV2.dir/all: abcg/external/imgui/CMakeFiles/imgui.dir/all
+examples/ATV2/CMakeFiles/ATV2.dir/all: abcg/external/fmt/CMakeFiles/fmt.dir/all
+	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yury47/CG_ATV2/build/CMakeFiles --progress-num=1,2,3 "Built target ATV2"
+.PHONY : examples/ATV2/CMakeFiles/ATV2.dir/all
 
 # Build rule for subdir invocation for target.
-examples/ATV2/CMakeFiles/loadmodel.dir/rule: cmake_check_build_system
+examples/ATV2/CMakeFiles/ATV2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yury47/CG_ATV2/build/CMakeFiles 26
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/ATV2/CMakeFiles/loadmodel.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/ATV2/CMakeFiles/ATV2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yury47/CG_ATV2/build/CMakeFiles 0
-.PHONY : examples/ATV2/CMakeFiles/loadmodel.dir/rule
+.PHONY : examples/ATV2/CMakeFiles/ATV2.dir/rule
 
 # Convenience name for target.
-loadmodel: examples/ATV2/CMakeFiles/loadmodel.dir/rule
-.PHONY : loadmodel
+ATV2: examples/ATV2/CMakeFiles/ATV2.dir/rule
+.PHONY : ATV2
 
 # clean rule for target.
-examples/ATV2/CMakeFiles/loadmodel.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/loadmodel.dir/build.make examples/ATV2/CMakeFiles/loadmodel.dir/clean
-.PHONY : examples/ATV2/CMakeFiles/loadmodel.dir/clean
+examples/ATV2/CMakeFiles/ATV2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/clean
+.PHONY : examples/ATV2/CMakeFiles/ATV2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

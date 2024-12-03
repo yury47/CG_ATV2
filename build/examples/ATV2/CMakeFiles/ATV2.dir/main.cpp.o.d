@@ -1,4 +1,4 @@
-examples/ATV2/CMakeFiles/loadmodel.dir/main.cpp.o: \
+examples/ATV2/CMakeFiles/ATV2.dir/main.cpp.o: \
  /home/yury47/CG_ATV2/examples/ATV2/main.cpp /usr/include/stdc-predef.h \
  /home/yury47/CG_ATV2/examples/ATV2/window.hpp \
  /home/yury47/CG_ATV2/abcg/abcgOpenGL.hpp \
