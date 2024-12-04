@@ -106,7 +106,7 @@ void Model::setupVAO(GLuint program) {
   m_translation = glm::vec3(0.0f, 1.75f, 0.0f);
 
   //Initial rotation
-  m_rotation = 90.0f;
+  m_rotation = 270.0f;
 
   m_viewMatrixLocation = abcg::glGetUniformLocation(program, "viewMatrix");
   m_projMatrixLocation = abcg::glGetUniformLocation(program, "projMatrix");

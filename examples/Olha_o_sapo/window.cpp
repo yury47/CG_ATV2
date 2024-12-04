@@ -73,7 +73,6 @@ void Window::onPaint() {
 
   // Set uniform variables for the current model
   abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &m_modelMatrix[0][0]);
-  //abcg::glUniform4f(colorLoc, 1.0f, 1.0f, 1.0f, 1.0f); // White
   abcg::glUniform4f(colorLoc, m_red, m_green, m_blue, 1.0f); // White
   m_model.render(m_trianglesToDraw);
   abcg::glUseProgram(0);
