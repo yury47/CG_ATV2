@@ -156,17 +156,17 @@ fmt/fast:
 .PHONY : fmt/fast
 
 #=============================================================================
-# Target rules for targets named ATV2
+# Target rules for targets named Olha_o_sapo
 
 # Build rule for target.
-ATV2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ATV2
-.PHONY : ATV2
+Olha_o_sapo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Olha_o_sapo
+.PHONY : Olha_o_sapo
 
 # fast build rule for target.
-ATV2/fast:
-	$(MAKE) $(MAKESILENT) -f examples/ATV2/CMakeFiles/ATV2.dir/build.make examples/ATV2/CMakeFiles/ATV2.dir/build
-.PHONY : ATV2/fast
+Olha_o_sapo/fast:
+	$(MAKE) $(MAKESILENT) -f examples/Olha_o_sapo/CMakeFiles/Olha_o_sapo.dir/build.make examples/Olha_o_sapo/CMakeFiles/Olha_o_sapo.dir/build
+.PHONY : Olha_o_sapo/fast
 
 # Help Target
 help:
@@ -176,7 +176,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ATV2"
+	@echo "... Olha_o_sapo"
 	@echo "... abcg"
 	@echo "... fmt"
 	@echo "... imgui"

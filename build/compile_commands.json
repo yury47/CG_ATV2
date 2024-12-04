@@ -100,13 +100,23 @@
   "file": "/home/yury47/CG_ATV2/abcg/external/fmt/format.cc"
 },
 {
-  "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
-  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/ATV2.dir/main.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/main.cpp",
-  "file": "/home/yury47/CG_ATV2/examples/ATV2/main.cpp"
+  "directory": "/home/yury47/CG_ATV2/build/examples/Olha_o_sapo",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Olha_o_sapo.dir/main.cpp.o -c /home/yury47/CG_ATV2/examples/Olha_o_sapo/main.cpp",
+  "file": "/home/yury47/CG_ATV2/examples/Olha_o_sapo/main.cpp"
 },
 {
-  "directory": "/home/yury47/CG_ATV2/build/examples/ATV2",
-  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/ATV2.dir/window.cpp.o -c /home/yury47/CG_ATV2/examples/ATV2/window.cpp",
-  "file": "/home/yury47/CG_ATV2/examples/ATV2/window.cpp"
+  "directory": "/home/yury47/CG_ATV2/build/examples/Olha_o_sapo",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Olha_o_sapo.dir/model.cpp.o -c /home/yury47/CG_ATV2/examples/Olha_o_sapo/model.cpp",
+  "file": "/home/yury47/CG_ATV2/examples/Olha_o_sapo/model.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/examples/Olha_o_sapo",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Olha_o_sapo.dir/window.cpp.o -c /home/yury47/CG_ATV2/examples/Olha_o_sapo/window.cpp",
+  "file": "/home/yury47/CG_ATV2/examples/Olha_o_sapo/window.cpp"
+},
+{
+  "directory": "/home/yury47/CG_ATV2/build/examples/Olha_o_sapo",
+  "command": "/usr/lib/ccache/c++  -I/home/yury47/CG_ATV2/abcg -I/home/yury47/CG_ATV2/abcg/external/cppitertools -I/home/yury47/CG_ATV2/abcg/external/fmt -I/home/yury47/CG_ATV2/abcg/external/glm/.. -I/home/yury47/CG_ATV2/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/yury47/CG_ATV2/abcg/external -isystem /home/yury47/CG_ATV2/abcg/external/tiny_obj_loader -O3 -DNDEBUG -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/Olha_o_sapo.dir/trackball.cpp.o -c /home/yury47/CG_ATV2/examples/Olha_o_sapo/trackball.cpp",
+  "file": "/home/yury47/CG_ATV2/examples/Olha_o_sapo/trackball.cpp"
 }
 ]

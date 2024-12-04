@@ -14,15 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Value Computed by CMake
-ATV2_BINARY_DIR:STATIC=/home/yury47/CG_ATV2/build/examples/ATV2
-
-//Value Computed by CMake
-ATV2_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-ATV2_SOURCE_DIR:STATIC=/home/yury47/CG_ATV2/examples/ATV2
-
 //Path to a program.
 CCACHE:FILEPATH=/usr/bin/ccache
 
@@ -286,6 +277,15 @@ OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenGL.so
 
 //Path to a file.
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
+
+//Value Computed by CMake
+Olha_o_sapo_BINARY_DIR:STATIC=/home/yury47/CG_ATV2/build/examples/Olha_o_sapo
+
+//Value Computed by CMake
+Olha_o_sapo_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Olha_o_sapo_SOURCE_DIR:STATIC=/home/yury47/CG_ATV2/examples/Olha_o_sapo
 
 //Path to a library.
 SDL2MAIN_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2main.a
